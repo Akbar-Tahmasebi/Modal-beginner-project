@@ -1,0 +1,112 @@
+@import "reset.css";
+
+@font-face {
+    font-family: IRANSans;
+    src: url('../font/IRANSansWe.eot');
+    src: url('../font/IRANSansWeb.eot?#iefix') format('embedded-opentype'),
+         url('../font/IRANSansWeb.woff2') format('woff2'),
+         url('../font/IRANSansWeb.woff') format('woff'),
+         url('../font/IRANSansWeb.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+body {
+    font-family: IRANSans;
+    background-color: rgb(0, 215, 154);
+    direction: rtl;
+}
+
+button, input {
+  font-family: IRANSans;
+}
+
+.opening {
+  margin: 20px auto;
+  display: block;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  color: rgb(235, 235, 235);
+  background-color: rgb(29, 29, 29);
+
+}
+
+.opening:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.container {
+  z-index: 9999;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  width: 450px;
+  height: 400px;
+  background-color: rgb(211, 211, 211);
+  margin: auto;
+  border-radius: 10px;
+}
+
+.close {
+  position: relative;
+  top: -15px;
+  right: -15px;
+  display: block;
+  font-size: 20px;
+  padding: 0px 10px;
+  border: none;
+  border-radius: 5px;
+  color: rgb(235, 235, 235);
+  background-color: rgb(29, 29, 29);
+}
+
+.close:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.images {
+  width: 330px;
+  display: block;
+  margin: auto;
+}
+.text {
+  text-align: center;
+  display: block;
+  color: black;
+  cursor: default;
+  padding: 5px;
+}
+
+.form-input {
+  width: 400px;
+  display: block;
+  margin: 10px auto;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 5px;
+  padding: 5PX 10px;
+}
+
+.email:focus {
+  outline: none;
+}
+
+.submit {
+  color: rgb(235, 235, 235);
+  background-color: rgb(29, 29, 29);
+}
+
+.submit:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
